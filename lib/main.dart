@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MediaQuery());
+  runApp(const MediaQuerry());
 }
-class MediaQuery extends StatelessWidget {
-  const MediaQuery({super.key});
+class MediaQuerry extends StatelessWidget {
+  const MediaQuerry({super.key});
 
   @override
   Widget build(BuildContext context) {
