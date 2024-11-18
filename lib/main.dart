@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(const MediaQuerry());
 }
+
 class MediaQuerry extends StatelessWidget {
   const MediaQuerry({super.key});
 
@@ -11,7 +12,7 @@ class MediaQuerry extends StatelessWidget {
     return Column(
       children: [
         Container(
-          color: Colors.black,
+          color: Colors.white,
           height: 200,
         ),
         Container(
