@@ -9,21 +9,12 @@ class MediaQuerry extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Container(
-          color: Colors.white,
-          height: 200,
-        ),
-        Container(
-          color: Colors.green,
-          height: 200,
-        ),
-        Container(
-          color: Colors.red,
-          height: 200,
-        ),
-      ],
-    );
+    return ListView.builder(
+        itemCount: 10,
+        itemBuilder: (context, index) {
+          return ListTile(
+          title:  Text("${index + 1}"),
+          );
+        });
   }
 }
