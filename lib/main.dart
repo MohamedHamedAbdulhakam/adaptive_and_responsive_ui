@@ -16,12 +16,17 @@ class FlexibleWidget extends StatelessWidget {
         body: Column(
           children: [
             Flexible(
-              child: Icon(Icons.import_contacts_sharp,
-              size: 200,),
+              child: FittedBox(
+                child: Icon(Icons.import_contacts_sharp,
+                size: 200,),
+              ),
             ),
             Container(
               height: 300,
               color: Colors.amber,
+              child: FittedBox(
+                fit: BoxFit.scaleDown,
+                child: Icon(Icons.ac_unit)),
             ),
             Container(
               height: 300,
