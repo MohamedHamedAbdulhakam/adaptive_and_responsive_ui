@@ -21,7 +21,7 @@ class MediaQueryExample extends StatelessWidget {
               return const LayoutMobile();
             } // Log the maxWidth correctly
             else {
-              return Text('another device');
+              return DesctopLayout();
             }
           },
         ),
@@ -74,6 +74,52 @@ class DetailsView extends StatelessWidget {
           style: const TextStyle(fontSize: 35),
         ),
       ),
+    );
+  }
+}
+
+class DesctopLayout extends StatefulWidget {
+  const DesctopLayout({super.key});
+
+  @override
+  State<DesctopLayout> createState() => _DesctopLayoutState();
+}
+
+class _DesctopLayoutState extends State<DesctopLayout> {
+ int number = 1;
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      children: [
+        Expanded(
+          child: ListView.builder(
+            itemCount: 10,
+            itemBuilder: (context, index) {
+              return GestureDetector(
+                onTap: () {
+                  number = index + 1;
+                  setState(() {
+                    
+                  });
+                },
+                child: Container(
+                  margin: const EdgeInsets.all(8),
+                  color: Colors.green,
+                  child: ListTile(
+                    title: Text("${index + 1}"),
+                  ),
+                ),
+              );
+            },
+          ),
+        ),
+        Expanded(
+            child: Container(
+          child: Center(
+            child: Text(number.toString()),
+          ),
+        ))
+      ],
     );
   }
 }
