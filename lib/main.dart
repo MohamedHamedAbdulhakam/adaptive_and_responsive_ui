@@ -13,30 +13,32 @@ class FlexibleWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        body: Column(
-          children: [
-            Flexible(
-              child: FittedBox(
-                child: Icon(Icons.import_contacts_sharp,
-                size: 200,),
-              ),
-            ),
-            Container(
-              height: 300,
-              color: Colors.amber,
-              child: FittedBox(
-                fit: BoxFit.scaleDown,
-                child: Icon(Icons.ac_unit)),
-            ),
-            Container(
-              height: 300,
-              color: Colors.red,
-            ),
-            Container(
-              height: 300,
-              color: Colors.green,
-            ),
-          ],
+        body: SingleChildScrollView(
+          child: Column(
+            children: [
+              SizedBox(height: 250,),
+              Row(children: [
+                Container(
+                  height: 100,
+                  width: 100,
+                  color: Colors.red,),
+                SizedBox(height: 18,
+                width: 18,
+                ),
+                Column(children: [
+                    Container(color: Colors.black,
+                    height: 100,
+                  width: 100,), 
+                    SizedBox(height: 18,),
+                     Container(color: Colors.green,
+                     height: 100,
+                  width: 100,)
+          
+                ],)
+              ],)
+          
+            ],
+          ),
         ),
       ),
     );
