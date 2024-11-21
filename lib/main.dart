@@ -17,25 +17,35 @@ class FlexibleWidget extends StatelessWidget {
           child: Column(
             children: [
               SizedBox(height: 250,),
-              Row(children: [
-                Container(
-                  height: 100,
-                  width: 100,
-                  color: Colors.red,),
-                SizedBox(height: 18,
-                width: 18,
-                ),
-                Column(children: [
-                    Container(color: Colors.black,
-                    height: 100,
-                  width: 100,), 
-                    SizedBox(height: 18,),
-                     Container(color: Colors.green,
-                     height: 100,
-                  width: 100,)
-          
-                ],)
-              ],)
+              IntrinsicHeight(
+                child: Row(children: [
+                  Expanded(
+                    child: Container(
+                      height: 250,
+                      width: 100,
+                      color: Colors.red,),
+                  ),
+                  
+                  Expanded(
+                    child: Column(children: [
+                      
+                        Expanded(
+                          child: Container(color: Colors.black,
+                                                 
+                                                ),
+                        ), 
+                        SizedBox(height: 18,),
+                         Expanded(
+                           child: Container(color: Colors.green,
+                           
+                                               ),
+                         )
+                              
+                    ],),
+                  )
+                ],),
+              ),
+              SizedBox(height: 250,)
           
             ],
           ),
