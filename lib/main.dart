@@ -1,62 +1,20 @@
 import 'dart:developer'; // For logging
 
+import 'package:adaptive_and_responsive_ui/views/home_view.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(FlexibleWidget());
+  runApp  (const MaterialApp(home: AdaptiveApp()));
 }
 
-class FlexibleWidget extends StatelessWidget {
-  const FlexibleWidget({super.key});
+class AdaptiveApp extends StatelessWidget {
+  const AdaptiveApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        body: SingleChildScrollView(
-          child: Column(
-            children: [
-              SizedBox(height: 250,),
-              IntrinsicHeight(
-                child: Row(children: [
-                  Expanded(
-                    child: Container(
-                      height: 250,
-                      width: 100,
-                      color: Colors.red,),
-                  ),
-                  
-                  Expanded(
-                    child: Column(children: [
-                      
-                        Expanded(
-                          child: Container(color: Colors.black,
-                                                 
-                                                ),
-                        ), 
-                        SizedBox(height: 18,),
-                         Expanded(
-                           child: Container(color: Colors.green,
-                           
-                                               ),
-                         )
-                              
-                    ],),
-                  )
-                ],),
-              ),
-              SizedBox(height: 250,)
-          
-            ],
-          ),
-        ),
-      ),
-    );
+    return const HomeView();
   }
 }
-
-
-
 
 
 
