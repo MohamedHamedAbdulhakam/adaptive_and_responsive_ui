@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-class DrawerModel {
+class DrawerItemModel {
   final String title;
   final IconData icon;
 
-  DrawerModel({required this.title, required this.icon});
+const DrawerItemModel({required this.title, required this.icon});
 }
