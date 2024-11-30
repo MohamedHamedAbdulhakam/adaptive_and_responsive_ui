@@ -1,5 +1,5 @@
 import 'package:adaptive_and_responsive_ui/models/drawer_model.dart';
-import 'package:adaptive_and_responsive_ui/views/widgets/custom_drawer_item.dart';
+
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
