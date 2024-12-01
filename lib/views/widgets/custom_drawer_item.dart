@@ -8,7 +8,7 @@ class CustomDrawerItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return  ListTile(
       leading: Icon(drawerItemModel.icon),
-      title: Text(drawerItemModel.),
+      title: Text(drawerItemModel),
     );
   }
 }
