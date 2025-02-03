@@ -16,10 +16,10 @@ class _HomeViewState extends State<HomeView> {
   Widget build(BuildContext context) {
     return Scaffold(
       key: scaffoldKey,
-      drawer: const CustomDrawer(),
+      drawer:  CustomDrawer(),
       backgroundColor: Color(0xffBDBDBD),
       appBar: AppBar(
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.green,
         leading: GestureDetector(
           onTap: () {
             scaffoldKey.currentState!.openDrawer();
