@@ -13,8 +13,7 @@ class AdaptiveApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return   ProfileScreenWithHalfImage  
-();
+    return   ProfileScreenWithHalfImage ();
   }
 }
 
