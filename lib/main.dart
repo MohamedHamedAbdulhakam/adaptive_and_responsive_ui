@@ -2,10 +2,11 @@ import 'dart:developer'; // For logging
 
 import 'package:adaptive_and_responsive_ui/views/home_view.dart';
 import 'package:adaptive_and_responsive_ui/views/profile_screen.dart';
+import 'package:adaptive_and_responsive_ui/views/widgets/notification_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp  (const MaterialApp(home: AdaptiveApp()));
+  runApp(const MaterialApp(home: AdaptiveApp()));
 }
 
 class AdaptiveApp extends StatelessWidget {
@@ -13,7 +14,7 @@ class AdaptiveApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return   ProfileScreenWithHalfImage ();
+    return NotificationScreen();
   }
 }
 
