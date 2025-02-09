@@ -26,7 +26,7 @@ class _HomeViewState extends State<HomeView> {
           },
           child: const Icon(
             Icons.menu,
-            color: Colors.white,
+            color: Colors.green,
           ),
         ),
       ),
