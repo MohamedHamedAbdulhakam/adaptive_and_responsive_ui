@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-
-
 class CallsScreen extends StatelessWidget {
   const CallsScreen({Key? key}) : super(key: key);
 
@@ -35,7 +33,8 @@ class CallsScreen extends StatelessWidget {
         itemCount: 3, // Number of cards
         itemBuilder: (context, index) {
           return Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
+            padding:
+                const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
             child: Card(
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(12.0),
@@ -78,11 +77,13 @@ class CallsScreen extends StatelessWidget {
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(8),
                             ),
-                            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                            padding: const EdgeInsets.symmetric(
+                                horizontal: 12, vertical: 8),
                           ),
                           child: Row(
                             children: [
-                              circularIcon(Icons.check, Colors.white, Colors.green.shade700),
+                              circularIcon(Icons.check, Colors.white,
+                                  Colors.green.shade700),
                               const SizedBox(width: 8),
                               const Text("Accept"),
                             ],
@@ -96,11 +97,13 @@ class CallsScreen extends StatelessWidget {
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(8),
                             ),
-                            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                            padding: const EdgeInsets.symmetric(
+                                horizontal: 12, vertical: 8),
                           ),
                           child: Row(
                             children: [
-                              circularIcon(Icons.close, Colors.white, Colors.orange.shade700),
+                              circularIcon(Icons.close, Colors.white,
+                                  Colors.orange.shade700),
                               const SizedBox(width: 8),
                               const Text("Busy"),
                             ],
