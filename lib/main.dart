@@ -7,6 +7,7 @@ import 'package:adaptive_and_responsive_ui/views/widgets/calls.dart';
 import 'package:adaptive_and_responsive_ui/views/widgets/calls_screen.dart';
 import 'package:adaptive_and_responsive_ui/views/widgets/create_call_screen.dart';
 import 'package:adaptive_and_responsive_ui/views/widgets/notification_screen.dart';
+import 'package:adaptive_and_responsive_ui/views/widgets/select_doctor.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -18,7 +19,7 @@ class AdaptiveApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CreateCallScreen();
+    return SelectDoctorScreen();
   }
 }
 
