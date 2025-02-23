@@ -17,7 +17,7 @@ class ProfileScreenWithHalfImage extends StatelessWidget {
           'My Profile',
           style: TextStyle(color: Colors.white),
         ),
-        centerTitle: false,
+        centerTitle: true,
       ),
       body: Stack(
         children: [
